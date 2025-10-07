@@ -17,6 +17,12 @@ public class ImplementationLLDS {
         list.insertAt(0, 000);
         list.print();
         System.out.println(list.head.data);
-
+        list.print();
+        list.deleteElement(3);
+        list.print();
+        list.size();
+        list.deleteElement(6);
+        list.print();
+        System.out.println(list.tail.data);
     }
 }

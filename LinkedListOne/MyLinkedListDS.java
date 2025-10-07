@@ -19,8 +19,43 @@ public class MyLinkedListDS {// user defined data Structure
         System.out.println();
     }
     
+    int getElement(int idx){
+        if(idx>=size || idx<0) return -1;
+        Node temp = head;
+        while(idx-- > 0){
+            temp = temp.next;
+        }
+        return temp.data;
+    }
+
     void size(){
         System.out.println("Length of LinkedList is: "+size);
+    }
+
+    void deleteElement(int idx){
+        if(idx>=size || idx<0 ) {
+            System.out.println("Invalid Idx");
+            return;
+        }
+
+        if(size==0) {
+            System.out.println("LIST ALRDY EMPTY");
+            return;
+        }
+
+        Node temp = head;
+        while(idx-->1){
+            temp = temp.next;
+        }
+
+        if(temp.next==tail) tail = temp;
+        //  agar kabhi tail wala index delete ho ra ho toh tail update karni pdegi
+
+        Node container = temp.next.next;
+        temp.next = container;
+        // temp.next = temp.next.next;
+        size--;
+
     }
 
     void addAtLast(int val){
@@ -58,7 +93,7 @@ public class MyLinkedListDS {// user defined data Structure
             addAtLast(data);
             return;
         }
-        if(index>size){
+        if(index>size || index<0){
             System.out.println("Invalid Index Given!!!");
             return;
         }
