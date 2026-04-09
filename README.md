@@ -7,6 +7,7 @@
 <body>
     <h1>DSA and Java 🚀</h1>
     <p>Welcome to the <strong>DSA and Java</strong> repository!</p>
+    <p> NOTE: I haven't been pushing DSA and other learning code to this repo, I have been practicing on multiple platforms and have my practice distributed over many folders, hence rendering me unable to compile and push it to this repo. Will be updating on the situation soon! </p>
     <p>
         This repository is my personal space for exploring, practicing, and improving my Java programming and DSA skills. 
         As a Computer Science enthusiast and an aspiring developer, I'm diving deep into Java and Data Structures 
